@@ -1,0 +1,117 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    user-select: none;
+  }
+  
+  body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  .header{
+    position: absolute;
+    top: 5%;
+  }
+  .world {
+    overflow: hidden;
+    position: relative;
+    margin-inline: auto;
+    border: .3rem solid black;
+  }
+  
+  .score {
+    position: absolute;
+    font-size: 8vmin;
+    right: 2.5vmin;
+    top: 1vmin;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+  }
+  
+  .start-screen {
+    position: absolute;
+    font-size: 5vmin;
+    top: 86%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  .ground {
+    --left: 0;
+    position: absolute;
+    width: 300%;
+    bottom: 0;
+    left: calc(var(--left) * 1%)
+  }
+  
+  .dino {
+    --bottom: 0;
+    position: absolute;
+    left: 1%;
+    height: 30%;
+    bottom: calc(var(--bottom) * 1%);
+  }
+  
+  .cactus {
+    position: absolute;
+    left: calc(var(--left) * 1%);
+    height: 30%;
+    bottom: 0;
+  }
+
+  .decor-dino{
+    position: absolute;
+  }
+
+  .decor-dino:nth-of-type(1){
+    top: 50%;
+    right: 2%;
+    transform: rotate(30deg);
+  }
+  .decor-dino:nth-of-type(2){
+    bottom: 5%;
+    left: 5%;
+    transform: rotate(-10deg);
+  }
+  .decor-dino:nth-of-type(3){
+    bottom: 15%;
+    left: 25%;
+    transform: rotate(60deg);
+  }
+  .decor-dino:nth-of-type(4){
+    top: 2.5%;
+    right: 2.5%;
+    transform: rotate(50deg);
+  }
+  .decor-dino:nth-of-type(5){
+    bottom: 2%;
+    right: 2%;
+    transform: rotate(-80deg);
+  }
+  .decor-dino:nth-of-type(6){
+    top: 75%;
+    right: 20%;
+    transform: rotate(30deg);
+    
+  }
+  .decor-dino:nth-of-type(7){
+    top: 5%;
+    left: 5%;
+    transform: rotate(30deg);
+  }
+  .decor-dino:nth-of-type(8){
+    top: 5%;
+    right: 25%;
+    transform: rotate(30deg);
+  }
+  .decor-dino:nth-of-type(9){
+    top: 15%;
+    left: 22%;
+    transform: rotate(-100deg);
+  }
