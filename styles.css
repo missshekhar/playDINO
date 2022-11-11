@@ -80,7 +80,7 @@
     transform: rotate(-10deg);
   }
   .decor-dino:nth-of-type(3){
-    bottom: 15%;
+    bottom: 12.5%;
     left: 25%;
     transform: rotate(60deg);
   }
